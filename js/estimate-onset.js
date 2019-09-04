@@ -40,11 +40,8 @@ const attributeStruct = {
 
 //init Write infomation
 document.getElementById("date").innerHTML = today();
-document.getElementById("startdate").value = todayRFC3339();
-document.getElementById("enddate").value = todayRFC3339();
-
-
-	
+document.getElementById("startdate").value = todayDateFormat();
+document.getElementById("enddate").value = todayDateFormat();
 	
 // Callback
 document.getElementById('addBucket').addEventListener('click', addBucket);
@@ -69,8 +66,8 @@ function pad(num, size) {
     return s;
 }
 
-// 오늘 날짜를 문자열로 출력한다.
-function todayRFC3339() {
+// 오늘 날짜를 문자열로 출력한다. input Date 형태로 출력한다.
+function todayDateFormat() {
 	let date = new Date();
 	let y = date.getFullYear();
 	let m = pad(date.getMonth() + 1,2);
@@ -138,27 +135,6 @@ function addBucket() {
 		alert("이메일 형식이 아닙니다.\nYour E-mail is not an email format.");
 		return
 	}
-	/*
-	if (parseInt(document.getElementById("objectTrackingRigid").value) > parseInt(document.getElementById("totalShotNum").value)) {
-		alert("objectTracking(Rigid) 값은 Total Tracking Shot 값보다 클 수 없습니다.\nThe objectTracking (Rigid) value can not be greater than the Total Tracking Shot value.");
-		return
-	}
-	if (parseInt(document.getElementById("objectTrackingNoneRigid").value) > parseInt(document.getElementById("totalShotNum").value)) {
-		alert("objectTracking(None Rigid) 값은 Total Tracking Shot 값보다 클 수 없습니다.\nThe objectTracking (None Rigid) value can not be greater than the Total Tracking Shot value.");
-		return
-	}
-	if (parseInt(document.getElementById("rotoanimationBasic").value) > parseInt(document.getElementById("totalShotNum").value)) {
-		alert("Rotoanimation (Basic) 값은 Total Tracking Shot 값보다 클 수 없습니다.\nThe Rotoanimation (Basic) value can not be greater than the Total Tracking Shot value.");
-		return
-	}
-	if (parseInt(document.getElementById("rotoanimationSoftDeform").value) > parseInt(document.getElementById("totalShotNum").value)) {
-		alert("Rotoanimation (Soft Deform) 값은 Total Tracking Shot 값보다 클 수 없습니다.\nThe Rotoanimation (Soft Deform) value can not be greater than the Total Tracking Shot value.");
-		return
-	}
-	if (parseInt(document.getElementById("layout").value) > parseInt(document.getElementById("totalShotNum").value)) {
-		alert("Layout (Camera Extension) 값은 Total Tracking Shot 값보다 클 수 없습니다.\nThe Layout (Camera Extension) value can not be greater than the Total Tracking Shot value.");
-		return
-	}*/
 	
 	let shot = Object.create(item);
 	let attrs = document.getElementsByTagName("input");
