@@ -26,21 +26,81 @@
     <div class="col-12 p-3">
         <img src="http://75mm.studio/img/logo_v02.svg" width=250>
     </div>
-    <div class="col-12 p-1">
+    <h2 class="col-12 pt-5 pb-1">
         Onset Acquisition Pricing
-        <h6 id="date">Date:</h6>
+    </h2>
+    <h6 class="col-12 pb-3">
+        per day, 30 spots
+    </h6>
+</div>
+
+<div class="container w-100">
+    <div class="">
+        <!--pricing start-->
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <h3 class="card-title pt-3">Lidar Scan</h3>
+                        <h5 class="col-12 pb-1">
+                            500만원
+                        </h5>
+                        <h6 class="col-12 pb-5">
+                            10만원 per additional spot.
+                        </h6>
+                        <div class="col-12 pb-2">
+                            Lidar Scan / 라이다 스캔
+                        </div>
+                        <div class="col-12 pb-2">
+                            Scan Registration / 라이다 정합
+                        </div>
+                        <div class="col-12 pb-2">
+                            Mesh Generation / 매쉬 생성
+                        </div>
+                        <div class="text-muted pt-5">
+                            Scan Registration and Mesh Generation take 3-5 days.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <h3 class="card-title pt-3">Texture(optional)</h3>
+                        <h5 class="col-12 pb-1">
+                            500만원
+                        </h5>
+                        <h6 class="col-12 pb-5">
+                            5만원 per additional spot.
+                        </h6>
+                        <div class="col-12 pb-2">
+                            ReferencePhoto & HDRI / 촬영
+                        </div>
+                        <div class="col-12 pb-2">
+                            Registration / 정합
+                        </div>
+                        <div class="col-12 pb-2">
+                            Generating Object / 오브젝트 생성
+                        </div>
+                        <div class="col-12 pb-2">
+                            Generating Texture / 텍스쳐 생성
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--pricing end-->
     </div>
 </div>
 
+<!--client information start-->
+<h2 class="mt-3 pt-4 pb-3 text-center">
+        Client Information *
+</h2>
 
 <div class="container w-100">
     <div class="row" id="document">
-        <!--Left-->
         <div class="col-sm-9">
-            <h4 class="mt-3">
-                Client Information *
-            </h4>
-            
             <div class="form-group row">
                 <div class="col-12 pb-1">
                     <input class="form-control" type="text" value="" id="author" placeholder="Company name">
@@ -54,18 +114,26 @@
                 <div class="col-12 pb-0">
                   Location Information
               </div>
-                <div class="col-12 pb-1">
+                <div class="col-10 pb-1">
                   <input class="form-control" type="text" value="" id="address" placeholder="Address of location">
+                </div>
+                <div class="col-2 pb-1">
+                    <input class="form-check-input" type="checkbox" id="domestic" placeholder="domestic">
+                    <lable class="form-check-label" for="domestic">Not Korea</lable>
                 </div>
                 <div class="col-12 pb-1">
                   <input class="form-control" type="text" value="" id="description" placeholder="Description">
                 </div>
-                <div class="col-9 pb-2">
-                  <input class="form-control" type="text" value="" id="photo" placeholder="Upload Photo image of location">
+
+                <!--file upload-->
+                <div class="custom-file col-12">
+                    <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+                    <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+                    <div class="invalid-feedback">Example invalid custom file feedback</div>
                 </div>
-                <div class="col-3 pb-2">
-                  <button type="button" class="btn btn-dark btn-block" onclick="sendToEmail()">Upload</button>
-                </div>
+                
+
+
                 <div class="col-12 pb-0">
                     Shooting Date ( StartDate ~ EndDate )
                 </div>
@@ -75,7 +143,9 @@
                 <div class="col-6 pb-1">
                     <input class="form-control" type="date" value="YYYY-MM-DD" id="enddate" placeholder="YYYY-MM-DD">
                 </div>
-                
+                <div class="col-12 pb-1">
+                    It takes 200만원 per a day
+                </div>
             </div>
             <div class="form-group row pl-4">
                 <div class="col-12">
@@ -89,61 +159,14 @@
                     <a class="text-dark" href="https://75mm.studio/privacy.html" target="_blank" rel="noopener noreferrer">개인정보 처리방침 (Privacy policy)</a>
                 </div>
             </div>
+            <!--client information end-->
 
-
-        
-            <h2 class="py-3 text-center">Pricing</h4>
             
-
-              <!--left buttom-->
-              <div class="row">
-                <div class="col-sm-6">
-                    <div class="card">
-                        <div class="card-body text-center">
-                          <h3 class="card-title pt-3">Lidar Scan</h3>
-                          <div class="col-12 pb-5">
-                            $100 per spot
-                          </div>
-                          <div class="col-12 pb-2">
-                            Lidar Scan / 라이다 스캔
-                          </div>
-                          <div class="col-12 pb-2">
-                            Scan Registration & Mesh Generation / 라이다 정합 & 매쉬 생성
-                          </div>
-                          <div class="text-muted pt-5">
-                            Scan Registration and Mesh Generation take 3-5 days.
-                          </div>  
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <h3 class="card-title pt-3">Photo</h3>
-                            <div class="col-12 pb-5">
-                                $50 per spot
-                              </div>
-                            <div class="col-12 pb-2">
-                              ReferencePhoto & HDRI / 촬영
-                            </div>
-                            <div class="col-12 pb-2">
-                              Registration / 정합
-                            </div>
-                            <div class="col-12 pb-2">
-                                Generating Object / 오브젝트 생성
-                            </div>
-                            <div class="col-12 pb-2">
-                                Generating Texture / 텍스쳐 생성
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
 
         <!--Bucket(Right)-->
         <div class="col-sm-3">
-            <div class="pt-3">
+            <div>
                 <button type="button" class="btn btn-dark btn-block" onclick="sendToEmail()"><i class="far fa-envelope"></i>&nbsp;&nbsp;&nbsp;Send to 75mm Studio</button>
             </div>
             <div class="pt-3 pb-3">
