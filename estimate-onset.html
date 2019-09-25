@@ -37,61 +37,55 @@
         <div class="row">
             <div class="col-sm-1"></div>
             <div class="col-sm-5">
-                <div class="card h-100">
+                <div class="card">
                     <div class="card-body text-center">
                         <h3 class="card-title pt-3">Lidar Scan</h3>
                         <h1 class="col-12 pt-5 pb-1">
-                            $5000
+                            $5,000
                         </h1>
                         <h5 class="text-muted pb-5">per 30 spots / day</h5>
                         
                         <h6 class="col-12 pb-5">
                             $100 per additional spot.<br>
-                            $2000 will be added per day as travel expense.
+                            $2,000 will be added per day as travel expense.*
                         </h6>
                         <hr>
-                        <div class="col-12 pt-5 pb-2">
-                            Lidar Scan / 라이다 스캔
-                        </div>
-                        <div class="col-12 pb-2">
-                            Scan Registration / 라이다 정합
-                        </div>
-                        <div class="col-12 pb-2">
-                            Mesh Generation / 매쉬 생성
-                        </div>
-                        <div class="text-muted pt-5">
-                            * Scan Registration and Mesh Generation take at least 3 days.<br>
-                        </div>
-                        <div class="text-muted pt-1">
-                            * Travel expense is subject to variation in the case of overseas on-set data acquisition.<br>
-                        </div>
+                        <p class="card-text">
+                            &nbsp;<br>
+                            &nbsp;<br>    
+                            Lidar Scan / 라이다 스캔<br>
+                            Scan Registration / 라이다 정합*<br>
+                            Mesh Generation / 매쉬 생성*<br>
+                            &nbsp;<br>
+                            &nbsp;<br>
+                            &nbsp;
+                        </p>
                     </div>
                 </div>
             </div>
             <div class="col-sm-5">
-                <div class="card h-100">
+                <div class="card">
                     <div class="card-body text-center">
-                        <h3 class="card-title pt-3">Texture(optional)</h3>
+                        <h3 class="card-title pt-3">Lidar Scan + Texture</h3>
                         <h1 class="col-12 pt-5 pb-1">
-                            $5000
+                            $10,000
                         </h1>
                         <h5 class="text-muted pb-5">per 30 spots / day</h5>
                         <h6 class="col-12 pb-5">
-                            $50 per additional spot.
+                            $150 per additional spot.<br>
+                            &nbsp;
                         </h6>
                         <hr>
-                        <div class="col-12 pt-5 pb-2">
-                            ReferencePhoto / 촬영
-                        </div>
-                        <div class="col-12 pb-2">
-                            Registration / 정합
-                        </div>
-                        <div class="col-12 pb-2">
-                            Generating Object / 오브젝트 생성
-                        </div>
-                        <div class="col-12 pb-2">
+                        <p class="card-text">
+                            Lidar Scan / 라이다 스캔<br>
+                            Scan Registration / 라이다 정합<br>
+                            Mesh Generation / 매쉬 생성<br>
+                            +<br>
+                            ReferencePhoto / 촬영<br>
+                            Registration / 정합<br>
+                            Generating Object / 오브젝트 생성<br>
                             Generating Texture / 텍스쳐 생성
-                        </div>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -100,6 +94,12 @@
         <!--copyright issues start-->
         <div class="text-center text-muted">
             <div class="pt-5">
+                * Scan Registration and Mesh Generation take at least 3 days.<br>
+            </div>
+            <div class="pt-2">
+                * Travel expense is subject to variation in the case of overseas on-set data acquisition.<br>
+            </div>
+            <div class="pt-2">
                 Lidar data can not be used or transfered to third-party company.
             </div>
             <div class="pt-2">
@@ -138,26 +138,25 @@
                 <div class="col-12 pb-0">
                   Location Information
                 </div>
-                <div class="col-10 pb-1">
-                  <input class="form-control" type="text" value="" id="address" placeholder="Address of location">
+                <div class="col-8 pb-1">
+                  <input class="form-control" type="text" value="" id="address" placeholder="Google Map URL">
                 </div>
-                <div class="col-2 pb-1">
+                <div class="col-4 pb-1">
                     <input class="form-check-input" type="checkbox" id="domestic" placeholder="domestic">
                     <lable class="form-check-label" for="domestic">Not Korea</lable>
                 </div>
                 <div class="col-12 pb-1">
                   <textarea class="form-control" rows="5" type="text" value="" id="description" placeholder="Description"></textarea>
                 </div>
-
-                <!--file upload-->
-                <div class="custom-file col-12">
+            
+                <!--file upload start-->
+                <!--<div class="col-12 custom-file">
                     <input type="file" class="custom-file-input" id="validatedCustomFile" required>
                     <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
                     <div class="invalid-feedback">Example invalid custom file feedback</div>
-                </div>
+                </div>-->
+                <!--file upload end-->
                 
-
-
                 <div class="col-12 pb-0">
                     Shooting Date ( StartDate ~ EndDate )
                 </div>
