@@ -213,25 +213,16 @@ function printMode() {
 }
 
 function resetForm() {
-	document.getElementById("comment").value = "";
-	document.getElementById("mono").checked = true;
-	document.getElementById("anamorphicLens").checked = false;
-	document.getElementById("stereo").checked = false;
-	document.getElementById("vr").checked = false;
-	document.getElementById("is4kOver").checked = false;
-	document.getElementById("noneSurvey").checked = false;
-	document.getElementById("noneOnsetInfo").checked = false;
-	document.getElementById("totalShotNum").value = 1;
-	document.getElementById("objectTrackingRigid").value = 0;
-	document.getElementById("objectTrackingNoneRigid").value = 0;
-	document.getElementById("rotoanimationBasic").value = 0;
-	document.getElementById("rotoanimationSoftDeform").value = 0;
-	document.getElementById("layout").value = 0;
-	document.getElementById("frame").value = 1;
-	bucket.project = ""; 
-	bucket.comment = "";
-	bucket.items = [];
-	bucketRender();
+	document.getElementById("author").value = "";
+	document.getElementById("email").value = "";
+	document.getElementById("project").value = "";
+	document.getElementById("url").value = "";
+	document.getElementById("domestic").checked = false;
+	document.getElementById("description").value = "";
+	document.getElementById("startdate").value = "";
+	document.getElementById("enddate").value = "";
+	document.getElementById("privacy").checked = false;
+
 }
 
 function sendToEmail() {
