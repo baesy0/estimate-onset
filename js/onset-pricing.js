@@ -104,10 +104,9 @@ function sendToEmail() {
 			break;
 		}
 	}
-	console.log(pricing);
-	/*
+	
 	$.ajax({
-		url: "https://b9mx1b8r59.execute-api.ap-northeast-2.amazonaws.com/estimate_send",
+		url: "https://oxtixvterh.execute-api.ap-northeast-2.amazonaws.com/onset-pricing",
 		type: 'POST',
 		data: JSON.stringify(pricing),
 		dataType: 'json',
@@ -121,5 +120,5 @@ function sendToEmail() {
 		}
 	});
 	alert("데이터가 전송되었습니다.\n업무시간 기준 24시간 안에 연락드리겠습니다.\nData has been transferred.\nWe will contact you within 24 business hours.");
-	*/
+	
 }
