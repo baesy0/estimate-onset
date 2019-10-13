@@ -18,19 +18,20 @@ exports.handler = function(event, context) {
 
     let msg = "";
     msg += "작성일 : " + event.date +"\n";
-    msg += "작성자 : " + event.company +"\n";
+    msg += "작성자 : " + event.author +"\n";
     msg += "프로젝트정보 : " + event.project + "\n";
-    msg += "URL : " + event.url + "\n";
     msg += "예상시작일 : " + event.startdate + "\n";
     msg += "예상마감일 : " + event.enddate + "\n";
     msg += "이메일 : " + event.email + "\n";
     msg += "코맨트 : " + event.description + "\n";
-    msg += "해외촬영 : " + event.domestic + "\n";
+    msg += "모델 : " + event.model + "\n";
+    msg += "URL : " + event.url + "\n";
+    msg += "국내촬영 : " + event.domestic + "\n";
     msg += "\n";
-    
+
     var params = {
         Message: msg,
-        Subject: `Estimate Notification - Send : ` + event.date,
+        Subject: `Onset-pricing Notification - Send : ` + event.date,
         TopicArn: `arn:aws:sns:ap-northeast-2:${ACCOUNTID}:${SNSTOPIC}`
     };
     var sns = new AWS.SNS();

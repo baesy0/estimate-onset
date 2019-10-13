@@ -106,7 +106,7 @@ function sendToEmail() {
 	}
 	
 	$.ajax({
-		url: "https://oxtixvterh.execute-api.ap-northeast-2.amazonaws.com/onset-pricing",
+		url: "https://78bfhky5v4.execute-api.ap-northeast-2.amazonaws.com/onset-pricing",
 		type: 'POST',
 		data: JSON.stringify(pricing),
 		dataType: 'json',
