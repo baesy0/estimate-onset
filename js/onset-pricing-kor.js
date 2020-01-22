@@ -3,6 +3,7 @@ let pricing = {
 	"date":"",
 	"model":"",
 	"author":"",
+	"person":"",
 	"email":"",
 	"project":"",
 	"url":"",
@@ -53,6 +54,7 @@ function printMode() {
 
 function resetForm() {
 	document.getElementById("author").value = "";
+	document.getElementById("person").value = "";
 	document.getElementById("email").value = "";
 	document.getElementById("project").value = "";
 	document.getElementById("url").value = "";
@@ -66,6 +68,10 @@ function resetForm() {
 function sendToEmail() {
 	if (document.getElementById("author").value == "") {
 		alert("회사명 또는 작성자 이름을 입력해주세요.");
+		return
+	}
+	if (document.getElementById("person").value == "") {
+		alert("담당자 이름을 입력해주세요.");
 		return
 	}
 	if (document.getElementById("email").value == "") {
@@ -88,6 +94,7 @@ function sendToEmail() {
 	
 	pricing.date = today();
 	pricing.author = document.getElementById("author").value;
+	pricing.author = document.getElementById("person").value;
 	pricing.email = document.getElementById("email").value;
 	pricing.project = document.getElementById("project").value;
 	pricing.url = document.getElementById("url").value;
