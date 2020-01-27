@@ -94,7 +94,7 @@ function sendToEmail() {
 	
 	pricing.date = today();
 	pricing.author = document.getElementById("author").value;
-	pricing.author = document.getElementById("person").value;
+	pricing.person = document.getElementById("person").value;
 	pricing.email = document.getElementById("email").value;
 	pricing.project = document.getElementById("project").value;
 	pricing.url = document.getElementById("url").value;
