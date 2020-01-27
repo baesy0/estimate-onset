@@ -11,6 +11,7 @@ exports.handler = function(event, context) {
         message: `${event}`,
         input: event
     };
+
     let response = {
         statusCode: 200,
         body: JSON.stringify(responseBody)
@@ -18,7 +19,8 @@ exports.handler = function(event, context) {
 
     let msg = "";
     msg += "작성일 : " + event.date +"\n";
-    msg += "작성자 : " + event.author +"\n";
+    msg += "회사명 : " + event.author +"\n";
+    msg += "담당자 : " + event.person +"\n";
     msg += "프로젝트정보 : " + event.project + "\n";
     msg += "예상시작일 : " + event.startdate + "\n";
     msg += "예상마감일 : " + event.enddate + "\n";
