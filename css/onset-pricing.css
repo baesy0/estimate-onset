@@ -42,6 +42,6 @@ input[type=radio]:checked+div{
   border-color: rgb(162, 162, 162);
 }
 
-.card-title{
+.wide-line-height{
   line-height: 150%;
 }
