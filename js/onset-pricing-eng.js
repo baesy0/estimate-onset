@@ -49,6 +49,8 @@ function todayDateFormat() {
 
 
 function printMode() {
+	// 인쇄시에는 가격모델이 숨겨져야한다.
+	document.getElementById("priceModel").style.display = 'none';
 	window.print();
 }
 
@@ -63,6 +65,8 @@ function resetForm() {
 	document.getElementById("startdate").value = "";
 	document.getElementById("enddate").value = "";
 	document.getElementById("privacy").checked = false;
+	// 리셋을 누르면 숨겨진 가격모델을 다시 보이도록 한다.
+	document.getElementById("priceModel").style.display = 'block';
 }
 
 function sendToEmail() {
