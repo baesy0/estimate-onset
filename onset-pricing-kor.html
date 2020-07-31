@@ -21,6 +21,8 @@
 <link rel="stylesheet" type="text/css" href="css/onset-pricing.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 </head>
+<!--print section 1 start-->
+<div class="section">
 <body class="p-3">
 <div class="row text-center">
     <div class="col-12 p-3">
@@ -28,15 +30,16 @@
     </div>
 </div>
 
+
+<!--pricing start-->
 <div id="priceModel" class="container w-100">
     <h2 class="text-center col-12 pt-4 pb-4">
         Onset Data Acquisition<br>
         가격 정책
     </h2>
     <div class="">
-        <!--pricing start-->
         <div class="row justify-content-center">
-            <div class="col-lg-3 col-sm-10">
+            <div name="printmode" class="col-lg-3 col-sm-10">
                 <input type="radio" name="pricingModel" value="lidarscan-for-matchmove: ₩3,000,000" class="form-check-input" id="selectLidarforMM" style="opacity:0; position:absolute;">
                 <div class="card inactive">
                     <label for="selectLidarforMM">
@@ -71,7 +74,7 @@
                     </label>
                 </div>
             </div>
-            <div class="col-lg-3 col-sm-10">
+            <div name="printmode" class="col-lg-3 col-sm-10">
                 <input type="radio" name="pricingModel" value="lidarscan: ₩5,000,000" class="form-check-input" id="selectLidar" checked="checked" style="opacity:0; position:absolute;">
                 <div class="card inactive">
                     <label for="selectLidar">
@@ -107,7 +110,7 @@
                     </label>
                 </div>
             </div>
-            <div class="col-lg-3 col-sm-10">
+            <div name="printmode" class="col-lg-3 col-sm-10">
                 <input type="radio" name="pricingModel" value="lidarscan-and-texture: ₩10,000,000" class="form-check-input" id="selectLidarTexture" style="opacity:0; position:absolute;">
                 <div class="card inactive">
                     <label for="selectLidarTexture">
@@ -153,9 +156,12 @@
         <!--copyright issues end--> 
     </div>
 </div>
+</div>
+<!--print section 1 end-->
 
 
-
+<!--print section 2 start-->
+<div class="section">
 <!--client information start-->
 <div class="text-center">
     <h2 class="mt-3 pt-4 pb-3">
@@ -260,6 +266,8 @@
         </div>
     </div>
 </div>
+</div>
+<!--print section 2 end-->
 
 </body>
 <script src="js/onset-pricing-kor.js"></script>
