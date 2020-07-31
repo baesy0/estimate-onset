@@ -45,3 +45,6 @@ input[type=radio]:checked+div{
 .wide-line-height{
   line-height: 150%;
 }
+
+/*프린트 페이지 나누기 위한 css요소*/
+.section{page-break-before:always;}
