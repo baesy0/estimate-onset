@@ -50,7 +50,14 @@ function todayDateFormat() {
 
 function printMode() {
 	// 인쇄시에는 가격모델이 숨겨져야한다.
-	//document.getElementById("priceModel").style.display = 'none';
+	// document.getElementById("priceModel").style.display = 'none';
+	// 2020.7.29
+	// 가격모델이 출력되도록 변경
+	// 출력 레이아웃을 일정하게 하기 위한 코드 추가
+	let e = document.getElementsByName("printmode")
+	for(i=0;i < e.length; i++){
+		e[i].className = "col-3"
+	}
 	window.print();
 }
 
