@@ -56,7 +56,7 @@ function printMode() {
 	// 출력 레이아웃을 일정하게 하기 위한 코드 추가
 	let e = document.getElementsByName("printmode")
 	for(i=0;i < e.length; i++){
-		e[i].className = "col-3"
+		e[i].className = "col-3 px-0"
 	}
 	window.print();
 }
